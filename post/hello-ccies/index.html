@@ -1,0 +1,225 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>一些CCIES的故事 | CCIES</title>
+<link rel="shortcut icon" href="https://luoyaocray.github.io/favicon.ico?v=1755921374848">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://luoyaocray.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="一些CCIES的故事 | CCIES - Atom Feed" href="https://luoyaocray.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="一、初识ifias💏
+当初做这个系统是因为我的爱人，选中了ifias来做课题，但是我们搜了很多资料都没有找到很适应的软件，最终发现bilibili有分享，是首都师范大学的方老师的软件，早期java写的，对应的excel也是老版本的，需要更..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://luoyaocray.github.io">
+  <img class="avatar" src="https://luoyaocray.github.io/images/avatar.png?v=1755921374848" alt="">
+  </a>
+  <h1 class="site-title">
+    CCIES
+  </h1>
+  <p class="site-description">
+    Convenient Classroom Interaction Encoding System
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://luoyaocray.github.io" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://luoyaocray.github.io/post/tu-wen-jiao-xue" class="menu">
+          图文教学
+        </a>
+      
+    
+      
+        <a href="https://luoyaocray.github.io/post/hello-ccies" class="menu">
+          为什么制作CCIES
+        </a>
+      
+    
+      
+        <a href="https://luoyaocray.github.io/post/about-us" class="menu">
+          关于我们
+        </a>
+      
+    
+      
+        <a href="https://luoyaocray.github.io/post/ccies-gong-yi-xiang-mu" class="menu">
+          公益
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              一些CCIES的故事
+            </h2>
+            <div class="post-info">
+              <span>
+                2025-05-07
+              </span>
+              <span>
+                8 min read
+              </span>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://luoyaocray.github.io/post-images/hello-ccies.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h2 id="一-初识ifias">一、初识ifias💏</h2>
+<p>当初做这个系统是因为我的爱人，选中了ifias来做课题，但是我们搜了很多资料都没有找到很适应的软件，最终发现bilibili有分享，是首都师范大学的方老师的软件，早期java写的，对应的excel也是老版本的，需要更改格式来适配软件。<br>
+我们在其软件中发现了一些问题<br>
+1、	点击编码以后不知道是对哪一个视频进行了编码<br>
+2、	视频需要手动暂停或者自己做预处理<br>
+3、	编码以后无法撤回，如果有编码错误只能继续错下去。编码还需自己二次核对<br>
+4、	分析软件和编码软件需要转换excel格式才能做分析<br>
+5、	分析数据的迁移矩阵有求和错误，数据存在误差（知网可查）<br>
+6、	折线图无法导出数据，无法做横向多节课的教师语言对比这种分析<br>
+7、	分析数据有限，需要优化<br>
+8、	生成的动态折线图无法用户自定义label和line等参数<br>
+最开始，我就发现的前两个问题做了分析，我使用python语言写了一个简单自己处理数据的脚本，使用moviepy库去把视频都切割为3s一段，这样编码的时候我们就可以更方便了，不再需要手动暂停。</p>
+<h2 id="二-深挖细节">二、深挖细节💪</h2>
+<p>当视频切割好片段以后，我们发现方老师的软件没有办法知道是否编码成功，因为我在编码以后，我会出现一些遗漏，需要自己去检查核对，这会使得本来就不方便的软件增加很多的工作量去检查核对。于是我爱人鼓励我，我们已经写了切割功能了，我又去学习了qt，写了一个界面来封装切割软件（也就是现在ccies的第一个功能），我在学习过程中，感觉pushbutton很适合来做编码，我好像可以复刻早期软件了，那么也就是我可以更改很多我想要的功能。我很激动得跟我爱人讲，于是她陪伴我一起，我们看论文，找软件逻辑，深挖细节。经历了半个月的探索，我们做出来编码软件第一版，当初还有很多问题，但是做简单的编码已经足够了，我的爱人提出，如果编码软件可以自动播放视频就好了，并且她还想要撤销编码功能，于是，我迎来了甲方的要求（对于一个初学者，有点不想继续改动，毕竟我们自己使用就行了），最终经历了半个月，我终于做好了，在我爱人的“疯狂胡乱操作下”，帮我找出了很多bug，这些bug都会导致软件直接崩溃进程丢失，说直白点就是大家做的编码数据丢失。（此处感谢我爱人前期的严格测试）最终编码软件做好了，在更改了格式以后，我们和方老师软件进行了交互测试，最终成功通过，也就是我们做的所有编码都可以在其软件中使用。我本以为到此结束了，毕竟分析软件我觉得有现成的。</p>
+<h2 id="三-继续努力">三、继续努力🍗</h2>
+<p>没错，我的爱人此刻站了出来，“我们再做个分析软件吧”，我就又开始研究分析软件，毕竟要集成画图和做表，我得学excel交互和图表，我们做了好多努力，这个地方我几次想放弃，因为对于一个初学python的人，我很多函数和库不知道怎么用，只能到处搜资料，同时我才研一刚结束，刚刚经历了中科大代培一年的课程，我想休息一下。但是爱人的需要促使我继续努力，我在暑假不断尝试改代码，同时也在不断学习python，最终我们的第一版分析软件做出来了，当时只实现了迁移矩阵和折线图的功能。基本软件功能到此就全部做完了</p>
+<h2 id="四-封装">四、封装🚀</h2>
+<p>是的，最初的软件巨丑，大家可以想象一个界面只有按钮和功能块，完全没有封装。此时我严格的甲方爱人出现了，我们开始计划封装好看一点，最终把我们未来会养的柯基——“秃秃”放在了界面中，以及做了秃秃的配色（柯基橙）在界面美化上大概忙碌了几天，我们还请我本科学妹，非常好的画画高手帮忙作图，界面的优化，她帮我做了很多努力，此处单独感谢一下小吴学妹。</p>
+<h2 id="五-内测阶段">五、内测阶段💯</h2>
+<p>到了内测阶段，我在bilibili和小红书发布了宣传，吸引了一部分先吃螃蟹的同学，前期我们一起在测试软件的功能，中途我们修改了很多bug，我也答应大家增加了很多他们需要的功能，比如编码软件中导出txt，分析软件中的一键预设还有雷达图等内容，前期我们一起努力优化，所以在软件的感谢列表（thanks_list）中，我把大家记录了，希望未来随着软件的推广，能够让后续的同学们记得有大家在前期的测试和建议，才有了更方便的软件来使用。最终在2024年8月24日，软件推广到互联网上开始传播。</p>
+<h2 id="六-完善补充">六、完善补充💡</h2>
+<p>在之后的几个月里，我们对软件又做了进一步的升级<br>
+1．	支持随时存档：我们可以按照点击保存按钮的时间节点来存档编码excel，并存储在CCIES_auto_save文件夹中，大家随时可以找到自己中途存档文件，不用担心数据丢失。<br>
+2．	支持读档：假如我们有事情，那么下一次打开软件，可以导入我们上一步存档的excel，然后继续编码，真正实现为用户便捷性考虑。全神贯注做编码很累，那么我们在做编码的时候增加这个功能，更为用户考虑！<br>
+3．	分析的折线图生成原始数据：帮助大家可以修改或者重绘折线图。<br>
+4．	增加后处理对比功能：上一步生成的原始数据，我们可以用来修改部分数据再导入绘制图片，图片中的标题和折线颜色都支持自定义，真正把作图审美让给用户决定。并且该功能可以绘制几节课的教师语言对比，实现横向对比作图数据的绘制。<br>
+5．	增加了雷达图的绘制，为大部分不会处理数据的用户节约作图时间。<br>
+6．	写引入信效度分析功能，后续会引入斯皮尔曼信效度分析算法。<br>
+7．	写入F检验和T检验，考虑大部分用户不会使用SPSS<br>
+8．	是否需要首尾添加沉寂编码，将选择权交给用户</p>
+<h2 id="七-后续计划">七、后续计划⏳</h2>
+<p>我目前在ccies中集成了大家最高使用率的ifias和itias两款分析，因为市面上没有更多的软件供大家使用，所以很多编码体系没办法推广。<br>
+未来会把其他定制过渡加入到CCIES中，实现一次购买可以使用多种类型的编码。<br>
+希望未来大家可以帮我联系更多合作的人，定制软件价格不贵，并且后续我们会回馈前期购买的同学。<br>
+大家顾虑软件刚开始没有权威性，我也在积极投递论文，联系老师合作，如果大家有意向合作也可以跟我联系。<br>
+欢迎大家向其他同学和老师推广我们，<br>
+推荐成功会有回馈激励。</p>
+<h2 id="八-关于发票">八、关于发票👩‍💻</h2>
+<p>我在2025年4月10日去上海浦东新区税务局开具发票。浦东税务局的人员告诉我还需要提供居住证，各种证明文件才能开具，并且个人开具发票的税率在20%以上，也就是说如果购买软件需要发票，则需要多承担税的部分。一般课题组是对公转账，这里又涉及其他方面的内容，很多个人售卖知识是无法开具发票的，目前我们还没有成立工作室或者责任有限公司，所以目前发票暂时无法开具。后续争取和其他学生创业团队一起解决该问题。</p>
+<h2 id="软件著作权-ccies">软件著作权-CCIES</h2>
+<p>可以做ifias和itias<br>
+<img src="https://luoyaocray.github.io/post-images/1746702357099.png" alt="" loading="lazy"></p>
+<h2 id="软件著作权-cciesm">软件著作权-CCIES(M)</h2>
+<p>可以做mfias<br>
+<img src="https://luoyaocray.github.io/post-images/1746702431212.png" alt="" loading="lazy"></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%B8%80-%E5%88%9D%E8%AF%86ifias">一、初识ifias💏</a></li>
+<li><a href="#%E4%BA%8C-%E6%B7%B1%E6%8C%96%E7%BB%86%E8%8A%82">二、深挖细节💪</a></li>
+<li><a href="#%E4%B8%89-%E7%BB%A7%E7%BB%AD%E5%8A%AA%E5%8A%9B">三、继续努力🍗</a></li>
+<li><a href="#%E5%9B%9B-%E5%B0%81%E8%A3%85">四、封装🚀</a></li>
+<li><a href="#%E4%BA%94-%E5%86%85%E6%B5%8B%E9%98%B6%E6%AE%B5">五、内测阶段💯</a></li>
+<li><a href="#%E5%85%AD-%E5%AE%8C%E5%96%84%E8%A1%A5%E5%85%85">六、完善补充💡</a></li>
+<li><a href="#%E4%B8%83-%E5%90%8E%E7%BB%AD%E8%AE%A1%E5%88%92">七、后续计划⏳</a></li>
+<li><a href="#%E5%85%AB-%E5%85%B3%E4%BA%8E%E5%8F%91%E7%A5%A8">八、关于发票👩‍💻</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E8%91%97%E4%BD%9C%E6%9D%83-ccies">软件著作权-CCIES</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E8%91%97%E4%BD%9C%E6%9D%83-cciesm">软件著作权-CCIES(M)</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by ayao
+  <a class="rss" href="https://luoyaocray.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
