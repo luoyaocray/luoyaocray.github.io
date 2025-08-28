@@ -1,12 +1,17 @@
 {
-    "version": "1.0.1",
-    "changelog": "1. 修复已知bug\n2. 优化性能",
+    "version": "1.0.3",
+    "changelog": "1. 适配 .z01~.z07 分卷格式\n2. 优化 GitHub 下载重试逻辑\n3. 修复分卷合并顺序错误",
     "update_info": {
-        "total_size_mb": 50.2,
+        "total_size_mb": 150.8,
         "split_files": [
-            "https://luoyaocray.github.io/FFFFF_update_package.zip.001",
-            "https://luoyaocray.github.io/FFFFF_update_package.zip.002",
-            "https://luoyaocray.github.io/FFFFF_update_package.zip.003"
+            "https://luoyaocray.github.io/luoyaocray.github.io/FFFFF_update_package.z01",
+            "https://luoyaocray.github.io/luoyaocray.github.io/FFFFF_update_package.z02",
+            "https://luoyaocray.github.io/luoyaocray.github.io/FFFFF_update_package.z03",
+            "https://luoyaocray.github.io/luoyaocray.github.io/FFFFF_update_package.z04",
+            "https://luoyaocray.github.io/luoyaocray.github.io/FFFFF_update_package.z05",
+            "https://luoyaocray.github.io/luoyaocray.github.io/FFFFF_update_package.z06",
+            "https://luoyaocray.github.io/luoyaocray.github.io/FFFFF_update_package.z07",
+            "https://luoyaocray.github.io/luoyaocray.github.io/FFFFF_update_package.zip"
         ],
         "merge_filename": "FFFFF_update_package.zip"
     }
