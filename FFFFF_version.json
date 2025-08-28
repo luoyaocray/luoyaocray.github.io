@@ -1,0 +1,5 @@
+{
+    "version": "1.0.2",
+    "changelog": "1. 修复了登录bug\n2. 优化了界面响应速度",
+    "update_url": "https://你的用户名.github.io/app-updates/update_package.zip"
+}
