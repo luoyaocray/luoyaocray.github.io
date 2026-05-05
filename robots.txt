@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luoyaocray.github.io/sitemap.xml
