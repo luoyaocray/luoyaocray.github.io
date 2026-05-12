@@ -134,6 +134,25 @@
       <enclosure url="https://luoyaocray.github.io/post-images/cciestu-wen-jiao-xue.jpg" length="0" type="image/jpeg"></enclosure>
     </item>
     <item>
+      <title>SSRF BL16U1 XRF荧光成像软件上位机操作手册</title>
+      <link>https://luoyaocray.github.io/post/ssrf-bl16u1-xrfying-guang-cheng-xiang-ruan-jian-shang-wei-ji-cao-zuo-shou-ce/</link>
+      <guid isPermaLink="true">https://luoyaocray.github.io/post/ssrf-bl16u1-xrfying-guang-cheng-xiang-ruan-jian-shang-wei-ji-cao-zuo-shou-ce/</guid>
+      <pubDate>Tue, 12 May 2026 21:49:10 +0800</pubDate>
+      <description><![CDATA[<p><img src="https://luoyaocray.github.io/post-images/1778593873354398900_0.png" alt="" /></p>
+<h2 id="go-">如上图所示，左边区域为电机连接<br />
+<code>&lt;</code> 按钮为向左相对移动<br />
+<code>&gt;</code> 按钮为向右相对移动<br />
+<code>go</code> 按钮为直接运动到绝对位置</h2>
+<h2 id="pacom">上方为pA计连接，可以选择com口和波特率来进行串口通信，默认直接连接即可。</h2>
+<h2 id="-motor-scan-rangerange10001000umpoint">下方为一维扫描<br />
+选择 <code>Timing scan</code> 为时间尺度扫描，根据读取的点数和每个点的积分时间进行采样。<br />
+选择 <code>Motor scan</code> 为运动扫描，从当前电机位置运动Range，比如range输入1000表示运动1000um，这里是向电机正方向移动，根据point输入的点数可以计算运动步长，从而算出采集多少个运动点。</h2>
+<p>右边为二维扫描，fast为快轴，slow为慢轴。电机先沿着快轴方向扫描一行，然后向慢轴方向运动一个step，再回到每一行起始位置。这样重复扫描一整张图。采集到二维图像。<br />
+二维扫描以SDD探测器采集。根据SDD设置的ROI，可以获得多幅图像==&gt;在二维扫描参数输入的下拉框可以选择设置好的ROI，点击<code>Show</code>可以进行展示。后续根据<code>Show_all</code>可以在一张图中展示 所有ROI分布。</p>
+]]></description>
+      <category>SSRF</category>
+    </item>
+    <item>
       <title>SSRF BL08U1A 双能软件操作说明</title>
       <link>https://luoyaocray.github.io/post/ssrf-bl08u1acao-zuo/</link>
       <guid isPermaLink="true">https://luoyaocray.github.io/post/ssrf-bl08u1acao-zuo/</guid>
