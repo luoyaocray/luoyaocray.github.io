@@ -181,6 +181,15 @@
       <enclosure url="https://luoyaocray.github.io/post-images/cciestu-wen-jiao-xue.jpg" length="0" type="image/jpeg"></enclosure>
     </item>
     <item>
+      <title>SSRF BL08U1A stack数据处理软件</title>
+      <link>https://luoyaocray.github.io/post/ssrf-bl08u1a-stackshu-ju-chu-li-ruan-jian/</link>
+      <guid isPermaLink="true">https://luoyaocray.github.io/post/ssrf-bl08u1a-stackshu-ju-chu-li-ruan-jian/</guid>
+      <pubDate>Mon, 13 Jul 2026 18:03:24 +0000</pubDate>
+      <description><![CDATA[<p>1</p>
+]]></description>
+      <category>SSRF</category>
+    </item>
+    <item>
       <title>SSRF BL16U1 XRF荧光成像软件</title>
       <link>https://luoyaocray.github.io/post/ssrf-bl16u1-xrfying-guang-cheng-xiang-ruan-jian-shang-wei-ji-cao-zuo-shou-ce/</link>
       <guid isPermaLink="true">https://luoyaocray.github.io/post/ssrf-bl16u1-xrfying-guang-cheng-xiang-ruan-jian-shang-wei-ji-cao-zuo-shou-ce/</guid>
