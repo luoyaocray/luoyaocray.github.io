@@ -184,8 +184,35 @@
       <title>SSRF BL08U1A stack数据处理软件</title>
       <link>https://luoyaocray.github.io/post/ssrf-bl08u1a-stackshu-ju-chu-li-ruan-jian/</link>
       <guid isPermaLink="true">https://luoyaocray.github.io/post/ssrf-bl08u1a-stackshu-ju-chu-li-ruan-jian/</guid>
-      <pubDate>Mon, 13 Jul 2026 18:03:24 +0000</pubDate>
-      <description><![CDATA[<p>1</p>
+      <pubDate>Mon, 13 Jul 2026 18:03:24 +0800</pubDate>
+      <description><![CDATA[<p><img src="https://luoyaocray.github.io/post-images/1783999385301071200_0.png" alt="" /><br />
+如上图所示，本软件分为三个区域<br />
+1.数据导入及存储<br />
+2.区域识别及聚类等参数调节<br />
+3.成像及谱学数据展示</p>
+<!-- more -->
+<p>该程序可以在主界面中切换中英文展示，方便不同语言的用户使用，用户首先点击浏览选择堆栈程序，该路径可以自定义文件存储位置并进行查找。也可以选择使用测试数据，该按钮则会选择程序目前使用的默认数据文件夹进行读取。输出目录不选择默认会在导入数据文件夹同级目录下创建文件夹存储用户分析后产生的数据，也可以选择浏览自定义存储路径。<br />
+<img src="https://luoyaocray.github.io/post-images/1783999480584607000_0.png" alt="" /><br />
+导入了数据以后，我们可以对初始参数进行调节，如下图6所示，在参数config这一栏，我们可以选择自动识别I0,object,core的边缘类型，比如提供默认为sobel模式，还可以调节堆栈对准迭代的次数来配准，在我们的采集软件中也有预配准，所以此处堆栈处理软件迭代次数默认为3次就已经比较好的效果了。我们已经将大部分参数预设为常用选项，导入数据以后可以进行微调，也可以直接进行分析先看看效果再调整参数。<br />
+<img src="https://luoyaocray.github.io/post-images/1783999507609962600_0.png" alt="" /><br />
+使用默认参数直接运行该软件，我们可以得到以下识别，其中红色为I0位置，也就是没有样品区域的直接透射光，绿色区域为object也是粗识别的物品区域，蓝色为core也是目前粗识别的核心区域，我们默认感兴趣core区域的元素分布，此时我们可以调整左边视图菜单栏。对ROI/I0选择下拉框为手动，并在右边图像区域进行标注，鼠标左键可以通过点击来识别多边形，鼠标右键表示选择完毕，同理将三个区域可以自行修改。<br />
+<img src="https://luoyaocray.github.io/post-images/1783999538074607400_0.png" alt="" /><br />
+我们修改了core区域，因为在初步堆栈数据中我们观察该区域有明显的明暗变化，根据比尔朗伯定律，此处会因为元素价态，样品对XRAY吸收，所以透射信号有变化。<br />
+<img src="https://luoyaocray.github.io/post-images/1783999558628292300_0.png" alt="" /><br />
+重新选择区域以后可以选择按手动区域重跑，然后等待结果。<img src="https://luoyaocray.github.io/post-images/1783999577785604000_0.png" alt="" /><br />
+根据我们所选区域分析以后，我们可以看见有两个明显的价态峰值，这里就对应测量元素的不同价态，用户可以根据该数据进行下一步处理。<br />
+<img src="https://luoyaocray.github.io/post-images/1783999598058488400_0.png" alt="" /><br />
+如图所示为样品通过PCA聚类以后不同区域的谱线，其中红色聚类区域的谱线如图红色，那么聚类区域可以通过左边视图选择图像下拉框进行查看。<br />
+<img src="https://luoyaocray.github.io/post-images/1783999623186951400_0.png" alt="" /><br />
+上图所示就是聚类区域1，可以对应上样品分布区域和谱线的内容。可以通过软件的保存按钮对该数据进行单独保存，也可以通过查看文件夹输出的数据进行查看。<br />
+<img src="https://luoyaocray.github.io/post-images/1783999643471925100_0.png" alt="" /><br />
+如上图所示，会输出以下原始数据，用户可以自行挑选。<br />
+软件本身不止可以查看聚类图和聚类谱线，我们还提供不同的数据展示<br />
+如下图所示的OD图，该图是将堆叠的堆栈数据根据比尔朗伯定律进行公式计算<br />
+<img src="https://luoyaocray.github.io/post-images/1783999657821634900_0.png" alt="" /><br />
+展示了样品对X射线的一个吸收情况，该图可以通过保存按钮进行单独存储。</p>
+<p>软件处理的流程图如下：<br />
+<img src="https://luoyaocray.github.io/post-images/1783999697279837800_0.png" alt="" /></p>
 ]]></description>
       <category>SSRF</category>
     </item>
