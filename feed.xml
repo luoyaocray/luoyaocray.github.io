@@ -181,10 +181,39 @@
       <enclosure url="https://luoyaocray.github.io/post-images/cciestu-wen-jiao-xue.jpg" length="0" type="image/jpeg"></enclosure>
     </item>
     <item>
+      <title>SSRF BL08U1A 堆栈数据转aXis2000工具</title>
+      <link>https://luoyaocray.github.io/post/ssrf-bl08u1a-dui-zhan-shu-ju-zhuan-axis2000gong-ju/</link>
+      <guid isPermaLink="true">https://luoyaocray.github.io/post/ssrf-bl08u1a-dui-zhan-shu-ju-zhuan-axis2000gong-ju/</guid>
+      <pubDate>Tue, 08 Sep 2026 21:05:58 +0800</pubDate>
+      <description><![CDATA[<p><img src="https://luoyaocray.github.io/post-images/1788844001740390800_0.png" alt="" /></p>
+<p>前面我们开发过做堆栈处理的程序</p>
+<p>但是自主开发的工具没有加拿大做的aXis2000那么有权威性</p>
+<p>所以这里基于aXis2000的数据格式，本人开发了数据转换工具</p>
+<p>可以使用本工具将采集的stack数据 <code>.h5</code> 转换为其所需的 <code>.hdr</code> 和 <code>.xim</code></p>
+<p>并且本工具支持多种散点转网格算法，可以合理填充数据。</p>
+<p>待相关论文发表再开源使用。</p>
+]]></description>
+      <category>SSRF</category>
+    </item>
+    <item>
+      <title>SSRF BL08U1A 堆栈采集软件</title>
+      <link>https://luoyaocray.github.io/post/ssrf-bl08u1a-dui-zhan-cai-ji-ruan-jian/</link>
+      <guid isPermaLink="true">https://luoyaocray.github.io/post/ssrf-bl08u1a-dui-zhan-cai-ji-ruan-jian/</guid>
+      <pubDate>Tue, 08 Sep 2026 20:58:54 +0800</pubDate>
+      <description><![CDATA[<p>适用于上海光源BL08U1A实验站的堆栈采集软件<br />
+<img src="https://luoyaocray.github.io/post-images/1788843720602670100_0.png" alt="" /></p>
+<p>原有线站采集程序因为线程管理导致卡顿闪退，目前正处于升级过程中</p>
+<p>本人为STXM设备开发学生</p>
+<p>特此开发该堆栈采集软件，程序运行稳如老狗</p>
+<p>并带有堆栈自校正功能，可将视场稳定在ROI区域。</p>
+]]></description>
+      <category>SSRF</category>
+    </item>
+    <item>
       <title>CCIES 用户荣誉墙</title>
       <link>https://luoyaocray.github.io/post/ccies-yong-hu-rong-yu-qiang/</link>
       <guid isPermaLink="true">https://luoyaocray.github.io/post/ccies-yong-hu-rong-yu-qiang/</guid>
-      <pubDate>Thu, 20 Aug 2026 23:58:56 +0000</pubDate>
+      <pubDate>Thu, 20 Aug 2026 23:58:56 +0800</pubDate>
       <description><![CDATA[<p>这里单开一个博客记录用户的荣誉🥇</p>
 <p>第22届国际中文教育学术研讨会<br />
 <img src="https://luoyaocray.github.io/post-images/1787241572547275800_0.jpg" alt="" /></p>

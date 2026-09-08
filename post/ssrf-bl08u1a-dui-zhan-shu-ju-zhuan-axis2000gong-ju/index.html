@@ -27,21 +27,26 @@
   })();
 </script>
   <meta name="generator" content="Gridea Pro 1.2.2">
-  <title>#SSRF | Cray&#39;s Blog</title>
+  <title>SSRF BL08U1A 堆栈数据转aXis2000工具 | Cray&#39;s Blog</title>
   
-<meta name="description" content="用来介绍一些我开发的工具">
-<link rel="canonical" href="https://luoyaocray.github.io/tag/ssrf/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Cray's Blog","url":"https://luoyaocray.github.io","description":"用来介绍一些我开发的工具","potentialAction":{"@type":"SearchAction","query-input":"required name=search_term_string","target":"https://luoyaocray.github.io/search?q={search_term_string}"}}</script>
-<meta property="og:title" content="Cray's Blog">
-<meta property="og:description" content="用来介绍一些我开发的工具">
-<meta property="og:url" content="https://luoyaocray.github.io/tag/ssrf/">
-<meta property="og:type" content="website">
+<meta property="og:title" content="SSRF BL08U1A 堆栈数据转aXis2000工具" />
+<meta property="og:type" content="article" />
+
+
+<meta name="description" content="前面我们开发过做堆栈处理的程序 但是自主开发的工具没有加拿大做的aXis2000那么有权威性 所以这里基于aXis2000的数据格式，本人开发了数据转换工具 可以使用本工具将采集的stack数据 .h5 转换为其所需的 .hdr 和 .xim 并且本工具支持多种散点转&amp;hellip;">
+<link rel="canonical" href="https://luoyaocray.github.io/post/ssrf-bl08u1a-dui-zhan-shu-ju-zhuan-axis2000gong-ju/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"SSRF BL08U1A 堆栈数据转aXis2000工具","url":"https://luoyaocray.github.io/post/ssrf-bl08u1a-dui-zhan-shu-ju-zhuan-axis2000gong-ju/","description":"前面我们开发过做堆栈处理的程序 但是自主开发的工具没有加拿大做的aXis2000那么有权威性 所以这里基于aXis2000的数据格式，本人开发了数据转换工具 可以使用本工具将采集的stack数据 .h5 转换为其所需的 .hdr 和 .xim 并且本工具支持多种散点转\u0026hellip;","datePublished":"2026-09-08T21:05:58+08:00","dateModified":"2026-09-08T13:09:04+08:00","author":{"@type":"Person","name":"Cray's Blog"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/images/avatar.png"},"name":"Cray's Blog"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://luoyaocray.github.io","name":"Cray's Blog","position":1},{"@type":"ListItem","item":"https://luoyaocray.github.io/post/ssrf-bl08u1a-dui-zhan-shu-ju-zhuan-axis2000gong-ju/","name":"SSRF BL08U1A 堆栈数据转aXis2000工具","position":2}]}</script>
+<meta property="og:title" content="SSRF BL08U1A 堆栈数据转aXis2000工具">
+<meta property="og:description" content="前面我们开发过做堆栈处理的程序 但是自主开发的工具没有加拿大做的aXis2000那么有权威性 所以这里基于aXis2000的数据格式，本人开发了数据转换工具 可以使用本工具将采集的stack数据 .h5 转换为其所需的 .hdr 和 .xim 并且本工具支持多种散点转&amp;hellip;">
+<meta property="og:url" content="https://luoyaocray.github.io/post/ssrf-bl08u1a-dui-zhan-shu-ju-zhuan-axis2000gong-ju/">
+<meta property="og:type" content="article">
 <meta property="og:site_name" content="Cray's Blog">
 <meta property="og:image" content="/images/avatar.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://luoyaocray.github.io/tag/ssrf/">
-<meta name="twitter:title" content="Cray's Blog">
-<meta name="twitter:description" content="用来介绍一些我开发的工具">
+<meta name="twitter:url" content="https://luoyaocray.github.io/post/ssrf-bl08u1a-dui-zhan-shu-ju-zhuan-axis2000gong-ju/">
+<meta name="twitter:title" content="SSRF BL08U1A 堆栈数据转aXis2000工具">
+<meta name="twitter:description" content="前面我们开发过做堆栈处理的程序 但是自主开发的工具没有加拿大做的aXis2000那么有权威性 所以这里基于aXis2000的数据格式，本人开发了数据转换工具 可以使用本工具将采集的stack数据 .h5 转换为其所需的 .hdr 和 .xim 并且本工具支持多种散点转&amp;hellip;">
 <meta name="twitter:image" content="/images/avatar.png">
 </head>
 <body class="flavor-theme">
@@ -163,135 +168,72 @@
 
   <main class="site-main" role="main">
     
-<div class="container">
-  <div class="page-header">
-    <a href="/tags" class="page-back meta-text">&larr; 所有标签</a>
-    <h1 class="page-title"><span class="page-title__hash">#</span>SSRF</h1>
-    
-    <p class="page-subtitle meta-text">共 5 篇文章</p>
-    
-  </div>
-
-  
-  <div class="post-list">
-    
-    <article class="post-card post-card--list">
-  <div class="post-card__body">
-    <a href="/post/ssrf-bl08u1a-dui-zhan-shu-ju-zhuan-axis2000gong-ju/" class="post-card__title-link">
-      <h3 class="post-card__title clamp-3">SSRF BL08U1A 堆栈数据转aXis2000工具</h3>
-    </a>
-    <a href="/post/ssrf-bl08u1a-dui-zhan-shu-ju-zhuan-axis2000gong-ju/" class="post-card__excerpt clamp-2">
-      前面我们开发过做堆栈处理的程序
-但是自主开发的工具没有加拿大做的aXis2000那么有权威性
-所以这里基于aXis2000的数据格式，本人开发了数据转换工具
-可以使用本工具将采集的stack数据 .h5 转换为其所需的 .hdr 和 ...
-    </a>
-    <div class="post-card__meta meta-text">
-      2026-09-08
+<article class="article-container">
+  <header class="article-header">
+    <h1 class="article-title">SSRF BL08U1A 堆栈数据转aXis2000工具</h1>
+    <div class="article-meta">
+      
+      <span class="article-meta__item">2026-09-08</span>
+      
+      <span class="article-meta__sep">·</span>
+      <span class="article-meta__item">1 分钟阅读</span>
       
     </div>
-  </div>
-  
-</article>
-
     
-    <article class="post-card post-card--list">
-  <div class="post-card__body">
-    <a href="/post/ssrf-bl08u1a-dui-zhan-cai-ji-ruan-jian/" class="post-card__title-link">
-      <h3 class="post-card__title clamp-3">SSRF BL08U1A 堆栈采集软件</h3>
-    </a>
-    <a href="/post/ssrf-bl08u1a-dui-zhan-cai-ji-ruan-jian/" class="post-card__excerpt clamp-2">
-      适用于上海光源BL08U1A实验站的堆栈采集软件
-
-原有线站采集程序因为线程管理导致卡顿闪退，目前正处于升级过程中
-本人为STXM设备开发学生
-特此开发该堆栈采集软件，程序运行稳如老狗
-并带有堆栈自校正功能，可将视场稳定在ROI区域。
-    </a>
-    <div class="post-card__meta meta-text">
-      2026-09-08
+    <div class="article-header__tags">
+      
+      <a href="/tag/ssrf/" class="tag-pill tag-pill--sm">SSRF</a>
       
     </div>
-  </div>
-  
-</article>
-
     
-    <article class="post-card post-card--list">
-  <div class="post-card__body">
-    <a href="/post/ssrf-bl08u1a-stackshu-ju-chu-li-ruan-jian/" class="post-card__title-link">
-      <h3 class="post-card__title clamp-3">SSRF BL08U1A stack数据处理软件</h3>
-    </a>
-    <a href="/post/ssrf-bl08u1a-stackshu-ju-chu-li-ruan-jian/" class="post-card__excerpt clamp-2">
-      如上图所示，本软件分为三个区域
-1.数据导入及存储
-2.区域识别及聚类等参数调节
-3.成像及谱学数据展示
+  </header>
 
-该程序可以在主界面中切换中英文展示，方便不同语言的用户使用，用户首先点击浏览选择堆栈程序，该路径可以自定义文件存储位置并进行...
-    </a>
-    <div class="post-card__meta meta-text">
-      2026-07-13
+  
+
+  <div class="article-content">
+    <p><img src="/post-images/1788844001740390800_0.png" alt="" /></p>
+<p>前面我们开发过做堆栈处理的程序</p>
+<p>但是自主开发的工具没有加拿大做的aXis2000那么有权威性</p>
+<p>所以这里基于aXis2000的数据格式，本人开发了数据转换工具</p>
+<p>可以使用本工具将采集的stack数据 <code>.h5</code> 转换为其所需的 <code>.hdr</code> 和 <code>.xim</code></p>
+<p>并且本工具支持多种散点转网格算法，可以合理填充数据。</p>
+<p>待相关论文发表再开源使用。</p>
+
+  </div>
+
+  
+  <nav class="post-nav">
+    
+    <a href="/post/cciestu-wen-jiao-xue/" class="post-nav-card post-nav-card--prev">
       
-    </div>
-  </div>
-  
-  <a href="/post/ssrf-bl08u1a-stackshu-ju-chu-li-ruan-jian/" class="post-card__thumb-link">
-    <img class="post-card__thumb" src="/post-images/ssrf-bl08u1a-stackshu-ju-chu-li-ruan-jian.png" alt="SSRF BL08U1A stack数据处理软件" loading="lazy" />
-  </a>
-  
-</article>
-
-    
-    <article class="post-card post-card--list">
-  <div class="post-card__body">
-    <a href="/post/ssrf-bl16u1-xrfying-guang-cheng-xiang-ruan-jian-shang-wei-ji-cao-zuo-shou-ce/" class="post-card__title-link">
-      <h3 class="post-card__title clamp-3">SSRF BL16U1 XRF荧光成像软件</h3>
-    </a>
-    <a href="/post/ssrf-bl16u1-xrfying-guang-cheng-xiang-ruan-jian-shang-wei-ji-cao-zuo-shou-ce/" class="post-card__excerpt clamp-2">
-      如上图所示，左边区域为电机连接
-&amp;lt; 按钮为向左相对移动
-&amp;gt; 按钮为向右相对移动
-go 按钮为直接运动到绝对位置
-上方为pA计连接，可以选择com口和波特率来进行串口通信，默认直接连接即可。
-下方为一维扫描
-选择 Timin...
-    </a>
-    <div class="post-card__meta meta-text">
-      2026-05-12
+      <div class="post-nav-card__img">
+        <img src="/post-images/cciestu-wen-jiao-xue.jpg" alt="CCIES软件" loading="lazy" />
+      </div>
       
-    </div>
-  </div>
-  
-</article>
-
+      <div class="post-nav-card__body">
+        <span class="post-nav-card__label meta-text">上一篇</span>
+        <span class="post-nav-card__title">CCIES软件</span>
+      </div>
+      <span class="post-nav-card__arrow">&larr;</span>
+    </a>
     
-    <article class="post-card post-card--list">
-  <div class="post-card__body">
-    <a href="/post/ssrf-bl08u1acao-zuo/" class="post-card__title-link">
-      <h3 class="post-card__title clamp-3">SSRF BL08U1A 双能软件</h3>
-    </a>
-    <a href="/post/ssrf-bl08u1acao-zuo/" class="post-card__excerpt clamp-2">
-      双能软件整体布局如上图所示
-1.可以切换中英双语（如果有老外我也可以增加其他语言 首选默认Chinese）
-2.根据SSRF BL08U1A采集到的stxm图像，可以直接进行浏览并导入吸收边和边前两幅图的h5文件，输出的网格图png可...
-    </a>
-    <div class="post-card__meta meta-text">
-      2026-05-05
+    
+    <a href="/post/ssrf-bl08u1a-dui-zhan-cai-ji-ruan-jian/" class="post-nav-card post-nav-card--next">
+      <div class="post-nav-card__body">
+        <span class="post-nav-card__label meta-text">下一篇</span>
+        <span class="post-nav-card__title">SSRF BL08U1A 堆栈采集软件</span>
+      </div>
       
-    </div>
-  </div>
-  
-  <a href="/post/ssrf-bl08u1acao-zuo/" class="post-card__thumb-link">
-    <img class="post-card__thumb" src="/post-images/ssrf-bl08u1acao-zuo.png" alt="SSRF BL08U1A 双能软件" loading="lazy" />
-  </a>
-  
-</article>
-
+      <span class="post-nav-card__arrow">&rarr;</span>
+    </a>
     
-  </div>
+  </nav>
+
   
-</div>
+  
+
+
+</article>
 
   </main>
 
